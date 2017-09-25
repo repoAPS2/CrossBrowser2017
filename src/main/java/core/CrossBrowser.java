@@ -37,7 +37,7 @@ public class CrossBrowser {
 	        System.out.println("identified driver = " + driverPath);}
 
 	        else  if (( browser.equals("Firefox"))  &&   (System.getProperty("os.name").toUpperCase().contains("WINDOWS")))  {
-	                 driverPath = "./resources/webdrivers/pc/geckodriver.exe";    }
+	                 driverPath = "resources/webdrivers/pc/geckodriver.exe";    }
 
 	        else if  ((browser .equals("Chrome")) && (System.getProperty("os.name").toUpperCase().contains("MAC")) ) {
 	        		 driverPath = "./resources/webdrivers/mac/chromedriver";
