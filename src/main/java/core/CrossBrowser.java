@@ -45,7 +45,7 @@ public class CrossBrowser {
 	                 System.out.println("identified driver = " + driverPath);
 	                }
 	        else if  ((browser .equals("Chrome")) && (System.getProperty("os.name").toUpperCase().contains("LINUX")) ) {
-       		 driverPath = "resources/webdrivers/lnx/chromedriver32";
+       		 driverPath = "resources/webdrivers/lnx/chromedriver";
        		
                 System.out.println("identified driver = " + driverPath);
                }
