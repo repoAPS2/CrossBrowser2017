@@ -31,7 +31,9 @@ public class CrossBrowser {
 	      System.out.println("os.name = " + osname + "; browser = " + browser);
 
 	        if (( browser.equals("Firefox"))   && (System.getProperty("os.name").toUpperCase().contains("MAC")))  {
-	               driverPath = "./resources/webdrivers/mac/geckodriver";
+	        	driverPath = "resources/webdriversA/mac/geckodriver";
+
+	             // driverPath = "./resources/webdrivers/mac/geckodriver";
 	        	// /CrossBrowser2017/resources/webdrivers/mac/geckodriver.sh
 	             //   driverPath = "./resources/webdrivers/mac/geckodriver.sh";
 	        System.out.println("identified driver = " + driverPath);}
@@ -45,7 +47,7 @@ public class CrossBrowser {
 	                 System.out.println("identified driver = " + driverPath);
 	                }
 	        else if  ((browser .equals("Chrome")) && (System.getProperty("os.name").toUpperCase().contains("LINUX")) ) {
-       		 driverPath = "resources/webdrivers/lnx/chromedriver";
+       		 driverPath = "resources/webdrivers/lnx/chromedriver64";
        		
                 System.out.println("identified driver = " + driverPath);
                }
@@ -61,23 +63,23 @@ public class CrossBrowser {
 
 	            case "Firefox": 
 	            	
-	            System.setProperty("webdriver.gecko.driver", driverPath);
+	            	System.setProperty("webdriver.gecko.driver", driverPath);
 	            
-	            String binaryPath = "/Applications/Firefox55.0.3.app/Contents/MacOS/firefox-bin";
-	        //    /Applications/Firefox55.0.3.app/Contents/MacOS/firefox-bin
-	            FirefoxOptions options = new FirefoxOptions();
-	            options.setBinary(binaryPath); //This is the location where you have installed Firefox on your machine
-	            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-	               capabilities.setCapability("moz:firefoxOptions", options);
-	               capabilities.setCapability(FirefoxDriver.MARIONETTE, true);
-
-	               driver = new FirefoxDriver(capabilities);
-	               driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	               driver.manage().window().maximize();
+//	            String binaryPath = "/Applications/Firefox55.0.3.app/Contents/MacOS/firefox-bin";
+//	        
+//	            FirefoxOptions options = new FirefoxOptions();
+//	            options.setBinary(binaryPath); //This is the location where you have installed Firefox on your machine
+//	            DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+//	               capabilities.setCapability("moz:firefoxOptions", options);
+//	               capabilities.setCapability(FirefoxDriver.MARIONETTE, true);
+//
+//	               driver = new FirefoxDriver(capabilities);
+//	               driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//	               driver.manage().window().maximize();
 	            
-//                driver = new FirefoxDriver();
-//                driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-//                driver.manage().window().maximize();
+	    			driver = new FirefoxDriver();
+	    			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	    			driver.manage().window().maximize();
 	                break;
 
 	            case  "Chrome":

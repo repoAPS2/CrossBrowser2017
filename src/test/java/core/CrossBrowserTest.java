@@ -13,20 +13,7 @@ import org.testng.annotations.Test;
 
 public class CrossBrowserTest extends  CrossBrowser{
 
-	 //  @Parameters({"browser"})
 
-//	    public  static final Properties ENV_PROPERTIES = getProperties();
-//	    public static  final String TEST_BROWSER= (String) ENV_PROPERTIES.get("browser");
-	 //   public static final Properties testProps = new Properties();
-
-	   // static {
-	   //     testProps.putAll(ENV_PROPERTIES);
-	    // }
-
-	  //  public static final String in_browser = System.getProperty("browser");
-
-
-	  //  @Parameters({"browser"})
 
 	    @Test
 	    public void test()  throws IOException {
