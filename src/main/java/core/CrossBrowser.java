@@ -42,7 +42,7 @@ public class CrossBrowser {
 	                 driverPath = "resources/webdrivers/pc/geckodriver.exe";    }
 	        
 	        else  if (( browser.equals("Firefox"))  &&   (System.getProperty("os.name").toUpperCase().contains("LINUX")))  {
-                driverPath = "resources/webdrivers/lnx/geckodriver.exe";    }
+                driverPath = "resources/webdrivers/lnx/geckodriver.sh";    }
 
 	        
 	        
