@@ -31,7 +31,7 @@ public class CrossBrowser {
 	      System.out.println("os.name = " + osname + "; browser = " + browser);
 
 	        if (( browser.equals("Firefox"))   && (System.getProperty("os.name").toUpperCase().contains("MAC")))  {
-	        	driverPath = "resources/webdriversA/mac/geckodriver";
+	        	driverPath = "resources/webdrivers/mac/geckodriver.sh";
 
 	             // driverPath = "./resources/webdrivers/mac/geckodriver";
 	        	// /CrossBrowser2017/resources/webdrivers/mac/geckodriver.sh
@@ -40,7 +40,13 @@ public class CrossBrowser {
 
 	        else  if (( browser.equals("Firefox"))  &&   (System.getProperty("os.name").toUpperCase().contains("WINDOWS")))  {
 	                 driverPath = "resources/webdrivers/pc/geckodriver.exe";    }
+	        
+	        else  if (( browser.equals("Firefox"))  &&   (System.getProperty("os.name").toUpperCase().contains("LINUX")))  {
+                driverPath = "resources/webdrivers/lnx/geckodriver.exe";    }
 
+	        
+	        
+	        
 	        else if  ((browser .equals("Chrome")) && (System.getProperty("os.name").toUpperCase().contains("MAC")) ) {
 	        		 driverPath = "./resources/webdrivers/mac/chromedriver";
 	        		 

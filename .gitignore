@@ -1,0 +1,13 @@
+#Folders
+/target/
+/Logs/
+/bin/
+.settings/
+.idea/
+/src/test/resources/data/csv/
+
+#Files
+.project
+.classpath
+CrossBrowser2017.iml
+.gitignore
